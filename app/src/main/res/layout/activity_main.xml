@@ -68,7 +68,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Radio Station"
                 android:id="@+id/StationDisplay"
-                android:textSize="50sp"
+                android:textSize="60sp"
                 android:background="#000000"
                 android:clickable="true"
                 android:textColor="#00ff00" />
@@ -78,19 +78,177 @@
                 android:layout_height="20px"
                 android:layout_weight="1" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tuner +"
-                android:id="@+id/TunerPlus"
-                android:textSize="40sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tuner -"
-                android:id="@+id/TunerMinus"
-                android:textSize="40sp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tuner +"
+                        android:id="@+id/TunerPlus"
+                        android:textSize="40sp" />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tuner -"
+                        android:id="@+id/TunerMinus"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TunerBar" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:id="@+id/Preset1" />
+
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:id="@+id/Preset2" />
+
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:id="@+id/Preset3" />
+
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:id="@+id/Preset4" />
+
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:id="@+id/Preset5" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="20px"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Volume %"
+                    android:id="@+id/VolumeDisplay"
+                    android:textSize="60sp"
+                    android:background="#000000"
+                    android:textColor="#00ff00" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vol +"
+                    android:id="@+id/VolumePlus" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vol -"
+                    android:id="@+id/VolumeMinus" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
         </LinearLayout>
 
     </LinearLayout>
@@ -100,6 +258,92 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#000088"></LinearLayout>
+        android:background="#000088">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TableRow
+                android:layout_width="800dp"
+                android:layout_height="30dp"
+                android:background="#000000"
+                android:id="@+id/DiscSlot"></TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/PlayPauseButton"
+                    android:background="@mipmap/PlayPauseButton" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/StopButton"
+                    android:background="@mipmap/StopButton" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/SkipBackwards"
+                    android:background="@mipmap/SkipBackwards" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/SkipForwards"
+                    android:background="@mipmap/SkipForwards" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/ShuffleButton"
+                    android:background="@mipmap/ShuffleButton" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/EjectButton"
+                    android:background="@mipmap/EjectButton" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
 </LinearLayout>
 
