@@ -18,16 +18,17 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="0">
 
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="On"
-                android:id="@+id/powerButton"
+                android:id="@+id/PowerButton"
                 android:textOn="On"
                 android:textOff="Off"
-                android:textSize="50sp" />
+                android:textSize="50sp"
+                android:checked="false" />
 
             <Space
                 android:layout_width="match_parent"
@@ -38,24 +39,60 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New ToggleButton"
-                android:id="@+id/toggleButton2"
+                android:id="@+id/AMFMButton"
                 android:textOn="FM"
                 android:textOff="AM"
                 android:textSize="50sp" />
 
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/textView" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Radio Station"
+                android:id="@+id/StationDisplay"
+                android:textSize="50sp"
+                android:background="#000000"
+                android:clickable="true"
+                android:textColor="#00ff00" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuner +"
+                android:id="@+id/TunerPlus"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuner -"
+                android:id="@+id/TunerMinus"
+                android:textSize="40sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
