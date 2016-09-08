@@ -22,7 +22,7 @@
             android:layout_weight="0">
 
             <ToggleButton
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/PowerButton"
                 android:textOn="On"
@@ -294,31 +294,31 @@
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:id="@+id/PlayPauseButton"
-                    android:background="@mipmap/PlayPauseButton" />
+                    android:background="@mipmap/playpausebutton" />
 
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/StopButton"
-                    android:background="@mipmap/StopButton" />
+                    android:background="@mipmap/stopbutton" />
 
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/SkipBackwards"
-                    android:background="@mipmap/SkipBackwards" />
+                    android:background="@mipmap/skipbackwards" />
 
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/SkipForwards"
-                    android:background="@mipmap/SkipForwards" />
+                    android:background="@mipmap/skipforwards" />
 
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/ShuffleButton"
-                    android:background="@mipmap/ShuffleButton" />
+                    android:background="@mipmap/shufflebutton" />
 
                 <Space
                     android:layout_width="0dp"
@@ -329,7 +329,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/EjectButton"
-                    android:background="@mipmap/EjectButton" />
+                    android:background="@mipmap/ejectbutton" />
 
             </LinearLayout>
 
